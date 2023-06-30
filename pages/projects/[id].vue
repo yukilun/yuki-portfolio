@@ -1,9 +1,7 @@
 <template>
-    <NuxtLayout>
     <div class="content-container">
         Project {{ id }}
     </div>
-    </NuxtLayout>
 </template>
 
 <script setup>

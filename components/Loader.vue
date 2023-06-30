@@ -1,12 +1,11 @@
 <template>
-    <div class="loader fixed w-full h-screen z-50 bg-[#617079] flex flex-col justify-center items-center gap-6" :class="isActive && 'active'">
+    <div class="loader fixed w-full h-screen z-40 bg-[#617079] flex flex-col justify-center items-center gap-6" :class="isActive && 'active'">
         <LoaderBubbles />
-        <LoaderText :loaderText="loaderText"/>
+        <LoaderText/>
     </div>
 </template>
 
 <script setup>
-    const { loaderText } = defineProps(['loaderText']);
     const isActive = ref(true);
     const timer = ref();
     onMounted(()=> {

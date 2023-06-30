@@ -3,14 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* *, *:hover {
+    cursor: none;
+} */
 
 body {
     background-color: #F5F5DC;
+    color: #63605b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
 }
 
 
 @layer components {
     .content-container {
-        @apply container mx-auto px-2 pt-4 pb-[88px];
+        @apply lg:container mx-auto px-5 pt-[110px] pb-[88px];
+    }
+    .text-highlight {
+        color: #5e768b;
     }
 }
