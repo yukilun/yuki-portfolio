@@ -1,7 +1,7 @@
 <template>
-    <div class="home-blobs -z-50 h-full w-full absolute top-0 left-0 lg:relative lg:w-1/2">
-        <svg class="home-blob" id="home-blob-1" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" 
-            style="opacity: 1;">
+    <div class="home-blobs relative -z-50 h-[70%] lg:h-full w-full flex-shrink lg:order-last lg:w-1/2">
+        <svg class="home-blob w-[100%] max-h-full max-w-[800px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            id="home-blob-1" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" style="opacity: 1;">
             <defs>
                 <linearGradient id="gradient-1" x1="0%" y1="0%" x2="0%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(210, 235, 238);"></stop>
@@ -14,8 +14,9 @@
                 </animate>
             </path>
         </svg>
-        <svg class="home-blob" id="home-blob-2" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" 
-            style="opacity: 1;" transform="rotate(77)">
+        <svg class="home-blob w-[90%] max-h-full max-w-[720px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            id="home-blob-2" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" style="opacity: 1;"
+            transform="rotate(77)">
             <defs>
                 <linearGradient id="gradient-2" x1="0%" y1="0%" x2="0%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(224, 223, 177);"></stop>
@@ -28,6 +29,15 @@
                 </animate>
             </path>
         </svg>
+        <div class="home-frameworks w-[80%] max-w-[640px] aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <img class="home-framework" src="/react.png" alt="react logo" />
+            <img class="home-framework" src="/vue.png" alt="vue logo" />
+            <img class="home-framework" src="/node.png" alt="node logo" />
+            <img class="home-framework" src="/laravel.png" alt="laravel logo" />
+            <img class="home-framework" src="/bootstrap.png" alt="bootstrap logo" />
+            <img class="home-framework" src="/tailwind.png" alt="tailwind logo" />
+            <img class="home-bubble"  src="/bubble.png" alt="bubble logo" />
+        </div>
     </div>
 </template>
 
@@ -36,26 +46,78 @@
 </script>
 
 <style scoped>
-    .home-blobs {
-        opacity: 0;
-        animation: fade 1000ms ease-in forwards 4000ms;
+.home-blobs {
+    opacity: 0;
+    animation: fade 1000ms ease-in forwards 4000ms;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+
+.home-frameworks {
+    position: relative;
+}
+.home-bubble {
+    width: 70px;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+    cursor: pointer;
+}
+
+.home-framework {
+    width: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    animation: wheel linear 3s infinite;
+}
+
+@media (min-width: 768px) {
+    .home-framework {
+        width: 60px;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        animation: md-wheel linear 3s infinite;
     }
-    .home-blob {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1024px) {
+    .home-framework {
+        animation: lg-wheel linear 3s infinite;
     }
-    #home-blob-1 {
-        max-width: 800px;
-        width: 90%;
-    }
-    #home-blob-2 {
-        max-width: 711px;
-        width: 80%;
-    }
-    @keyframes fade {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-    }
+}
+.home-framework:nth-child(1) {
+    animation-delay: 3s;
+}
+.home-framework:nth-child(2) {
+    animation-delay: 3.5s;
+}
+.home-framework:nth-child(3) {
+    animation-delay: 4s;
+}
+.home-framework:nth-child(4) {
+    animation-delay: 4.5s;
+}
+.home-framework:nth-child(5) {
+    animation-delay: 5s;
+}
+.home-framework:nth-child(6) {
+    animation-delay: 5.5s;
+}
+
+@keyframes wheel {
+    0% {transform: rotate(0deg) translateX(80px) rotate(0deg);}
+    100% {transform: rotate(-360deg) translateX(80px) rotate(360deg);}
+}
+@keyframes md-wheel {
+    0% {transform: rotate(0deg) translateX(90px) rotate(0deg);}
+    100% {transform: rotate(-360deg) translateX(90px) rotate(360deg);}
+}
+@keyframes lg-wheel {
+    0% {transform: rotate(0deg) translateX(100px) rotate(0deg);}
+    100% {transform: rotate(-360deg) translateX(100px) rotate(360deg);}
+}
 </style>
