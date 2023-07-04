@@ -4,7 +4,7 @@
         <Loader :key="$route"/>
         <div class="w-full min-h-screen max-h-screen overflow-hidden relative">
             <Header />
-            <div class="w-full h-full overflow-auto absolute top-0 left-0">
+            <div class="w-full h-full overflow-auto absolute top-0 left-0" :class="isOpenMenu ? 'overflow-hidden' : 'overflow-auto'">
                 <slot  />
             </div>
         </div>
@@ -20,6 +20,7 @@
             {name: 'description', content: "Welcome to Yuki Lun's portfolio."}
         ]
     });
+    const isOpenMenu = useIsOpenMenu();
 </script>
 
 <style scoped>
