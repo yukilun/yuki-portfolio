@@ -1,0 +1,46 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Expense Sharing",
+            "type": "MERN Stack",
+            "thumbnail": "/images/project-thumbnails/expenses-sharing.png",
+            "link": "https://expenses-sharing.yukilun.com"
+        },
+        {
+            "id": 2,
+            "name": "Chatflex",
+            "type": "Firebase + React",
+            "thumbnail": "/images/project-thumbnails/chatflex.png",
+            "link": "https://chatflex.yukilun.com"
+        },
+        {
+            "id": 3,
+            "name": "Cute Avatar Sketch",
+            "type": "Next.js",
+            "thumbnail": "/images/project-thumbnails/cute-avatar-sketch.png",
+            "link": "https://cute-avatar-sketch.yukilun.com"
+        },
+        {
+            "id": 4,
+            "name": "Dear K.",
+            "type": "Laravel + Vue.js",
+            "thumbnail": "/images/project-thumbnails/dear-k.png",
+            "link": "https://dear-k.yukilun.com"
+        },
+        {
+            "id": 5,
+            "name": "SCHOOLOOP",
+            "type": "Figma UX/UI Design",
+            "thumbnail": "/images/project-thumbnails/schooloop.png",
+            "link": "https://www.figma.com/proto/m3ELvxbHpKy8GSnInPNSiw/F22_G10_SCHOOLOOP?type=design&node-id=445-3920&t=VQ29kanYcFfRRSH2-1&scaling=scale-down&page-id=445%3A2142&starting-point-node-id=445%3A3623&mode=design"
+        },
+        {
+            "id": 6,
+            "name": "Javascript Challenges",
+            "type": "HTML + CSS + Vanilla Js",
+            "thumbnail": "/images/project-thumbnails/js-projects-challenges.png",
+            "link": "https://yukilun.github.io/JavaScript_Projects_Challenges/"
+        }
+    ]
+}
