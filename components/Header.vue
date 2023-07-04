@@ -1,6 +1,6 @@
 <template>
-    <div class="header absolute z-30 top-0 left-0 w-full px-6 pt-3 pb-3 md:pb-6 bg-[#F5F5DC] bg-opacity-20">
-        <NuxtLink to="/" class="w-fit flex flex-col items-center origin-top-left md:scale-125">
+    <div class="header absolute z-30 top-0 left-0 w-full px-6 pt-3 pb-3 md:pb-6 bg-[#F5F5DC] bg-opacity-0">
+        <NuxtLink to="/" class="w-fit flex flex-col items-center origin-top-left md:scale-125 opacity-80 hover:opacity-100 hover:scale-125 md:hover:scale-150 transtion-all duration-500">
             <svg width="81" height="46" viewBox="0 0 81 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_21_32)">
                     <circle cx="23" cy="22" r="20" fill="#EFEBC4" />
@@ -83,7 +83,7 @@
                 </filter>
             </defs>
         </svg>
-        <h3 class="text-lg">YUKI LUN</h3>
+        <!-- <h3 class="text-lg">YUKI LUN</h3> -->
     </NuxtLink>
 </div></template>
 
@@ -91,4 +91,5 @@
 
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>
