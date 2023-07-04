@@ -19,12 +19,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer components {
     .content-container {
-        @apply lg:container mx-auto px-2 md:px-4 pt-[110px] pb-[88px];
+        @apply container mx-auto px-2 md:px-4 pb-[88px];
     }
     .text-highlight {
         color: #5e768b;
     }
     .button {
-        @apply bg-[#b9a859] text-white shadow-lg transition-all opacity-70 hover:!scale-110 hover:!opacity-100;
+        @apply bg-[#b9a859] text-white shadow-lg inline-block transition-all opacity-70 hover:!scale-105 hover:!opacity-100;
     }
 }
