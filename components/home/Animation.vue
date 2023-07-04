@@ -1,5 +1,5 @@
 <template>
-    <div class="home-blobs relative -z-50 h-[70%] lg:h-full w-full flex-shrink lg:order-last lg:w-1/2">
+    <div class="home-animation relative -z-50 h-[70%] sm:h-[60%] lg:h-full w-full flex-shrink lg:order-last lg:w-1/2">
         <svg class="home-blob w-[100%] max-h-full max-w-[800px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             id="home-blob-1" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" style="opacity: 1;">
             <defs>
@@ -30,13 +30,13 @@
             </path>
         </svg>
         <div class="home-frameworks w-[80%] max-w-[640px] aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <img class="home-framework" src="/react.png" alt="react logo" />
-            <img class="home-framework" src="/vue.png" alt="vue logo" />
-            <img class="home-framework" src="/node.png" alt="node logo" />
-            <img class="home-framework" src="/laravel.png" alt="laravel logo" />
-            <img class="home-framework" src="/bootstrap.png" alt="bootstrap logo" />
-            <img class="home-framework" src="/tailwind.png" alt="tailwind logo" />
-            <img class="home-bubble"  src="/bubble.png" alt="bubble logo" />
+            <img class="home-framework" src="/images/frameworks/react.png" alt="react logo" />
+            <img class="home-framework" src="/images/frameworks/vue.png" alt="vue logo" />
+            <img class="home-framework" src="/images/frameworks/node.png" alt="node logo" />
+            <img class="home-framework" src="/images/frameworks/laravel.png" alt="laravel logo" />
+            <img class="home-framework" src="/images/frameworks/bootstrap.png" alt="bootstrap logo" />
+            <img class="home-framework" src="/images/frameworks/tailwind.png" alt="tailwind logo" />
+            <img class="home-bubble"  src="/images/frameworks/bubble.png" alt="bubble logo" />
         </div>
     </div>
 </template>
@@ -46,7 +46,7 @@
 </script>
 
 <style scoped>
-.home-blobs {
+.home-animation {
     opacity: 0;
     animation: fade 1000ms ease-in forwards 4000ms;
 }
@@ -56,23 +56,36 @@
     100% { opacity: 1;}
 }
 
+.home-bubble {
+    width: 60px;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    cursor: pointer;
+}
 .home-frameworks {
     position: relative;
 }
-.home-bubble {
-    width: 70px;
+.home-framework {
+    width: 44px;
     position: absolute;
-    top: calc(50% - 35px);
-    left: calc(50% - 35px);
-    cursor: pointer;
+    top: calc(50% - 22px);
+    left: calc(50% - 22px);
+    animation: wheel linear 3s infinite;
 }
 
-.home-framework {
-    width: 50px;
-    position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
-    animation: wheel linear 3s infinite;
+@media (min-width: 640px) {
+    .home-bubble {
+    width: 70px;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+    }
+    .home-framework {
+        width: 50px;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+        animation: sm-wheel linear 3s infinite;
+    }
 }
 
 @media (min-width: 768px) {
@@ -109,6 +122,10 @@
 }
 
 @keyframes wheel {
+    0% {transform: rotate(0deg) translateX(70px) rotate(0deg);}
+    100% {transform: rotate(-360deg) translateX(70px) rotate(360deg);}
+}
+@keyframes sm-wheel {
     0% {transform: rotate(0deg) translateX(80px) rotate(0deg);}
     100% {transform: rotate(-360deg) translateX(80px) rotate(360deg);}
 }
