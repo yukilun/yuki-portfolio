@@ -4,9 +4,9 @@
         class="menu-card flex-shrink-0 scale-95 opacity-80 hover:scale-100 hover:opacity-100">
         <div>
             <p class="font-serif text-base md:text-lg tracking-widest uppercase mb-2 text-white">{{ path }}</p>
-            <img class="w-[300px] h-[200px] object-cover hidden md:block" src="https://placehold.co/600x400"
+            <img class="w-[400px] aspect-video object-cover hidden md:block" :src="`/images/menu/${path}-labtop.png`"
                 alt="home thumb">
-            <img class="w-[120px] h-[180px] object-cover block md:hidden" src="https://placehold.co/400x600"
+            <img class="w-[135px] h-[240px] object-cover block md:hidden" :src="`/images/menu/${path}-phone.png`"
                 alt="home thumb">
         </div>
     </NuxtLink>
