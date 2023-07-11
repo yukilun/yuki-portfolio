@@ -1,15 +1,56 @@
 <template>
-    <div class="content-container">
-        Contact
-        <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+    <div class="content-container" :class="isLoading && 'h-0 overflow-hidden'" ref="container">
+        <div class="contact w-[90%] mx-auto">
+            <SectionHeader heading="Contact" :canScroll="canScroll" />
+            <div class="contact-container max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-5 pb-5 lg:pb-10 overflow-hidden">
+                <ContactIntro />
+                <ContactActions />
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-    const loaderText = useLoaderText();
-    loaderText.value = 'Contact';
+const isLoading = useIsLoading();
+const loaderText = useLoaderText();
+loaderText.value = 'Contact';
+
+const canScroll = ref(true);
+const container = ref(null);
+
+onMounted(()=> {
+    canScroll.value = container.value.scrollHeight > document.body.clientHeight;
+})
 </script>
 
 <style scoped>
+.bubble-left {
+    opacity: 0; 
+    transform: translateX(-50%);
+}
+.bubble-right {
+    opacity: 0; 
+    transform: translateX(50%);
+}
+
+.contact-left h3, .contact-left p, .contact-right {
+    opacity: 0; 
+    transform: translateY(50%);
+}
+
+
+.contact-left.inview .bubble-left, 
+.contact-left.inview .bubble-right, 
+.contact-left.inview h3, 
+.contact-left.inview p,
+.contact-right.inview {
+    opacity: 1; 
+    transform: translateX(0%) translateY(0%);
+    transition: all 500ms 500ms; 
+} 
+
+.contact-left.inview h3, .contact-left.inview p {
+    transition-delay: 800ms; 
+}
 
 </style>
