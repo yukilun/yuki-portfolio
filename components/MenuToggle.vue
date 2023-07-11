@@ -137,6 +137,11 @@
 
 <script setup>
     const  isOpenMenu  = useIsOpenMenu();
+    watch(isOpenMenu, ()=> {
+        if(isOpenMenu) {
+            
+        }
+    })
 </script>
 
 <style scoped>
