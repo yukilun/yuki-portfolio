@@ -14,5 +14,8 @@
     "@types/node": "^18",
     "nuxt": "^3.6.1",
     "nuxt-icon": "^0.4.1"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.3"
   }
 }
