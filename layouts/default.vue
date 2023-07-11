@@ -4,7 +4,7 @@
         <Loader :key="$route"/>
         <div class="w-full min-h-screen max-h-screen overflow-hidden relative">
             <Header />
-            <div class="w-full h-full overflow-auto absolute top-0 left-0" :class="isOpenMenu ? 'overflow-hidden' : 'overflow-auto'">
+            <div class="scroll-container w-full h-full overflow-auto absolute top-0 left-0" :class="isOpenMenu ? 'overflow-hidden' : 'overflow-auto'">
                 <slot  />
             </div>
         </div>
@@ -24,4 +24,7 @@
 </script>
 
 <style scoped>
+.scroll-container {
+    scrollbar-gutter: stable;
+}
 </style>
