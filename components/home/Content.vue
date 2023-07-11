@@ -5,8 +5,13 @@
         <h3 class="home-content-intro-3 text-3xl md:text-4xl lg:text-5xl xl:text-6xl capitalize mb-10 md:mb-14 lg:mb-20"><span class="text-highlight">web developer</span>.</h3>
         <NuxtLink to="/projects" class="home-content-projects-button button text-xl md:text-2xl lg:text-3xl font-serif py-3 px-6 group" id="home-content-projects-button">
             View My Projects&nbsp;
-            <Icon class="inline group-hover:hidden" name="mingcute:eye-close-fill" color="white" size="28"/> 
-            <Icon class="!hidden group-hover:!inline" name="mingcute:eye-2-fill" color="white" size="28"/> 
+            <span class="with-hover">
+                <Icon class="inline group-hover:hidden" name="mingcute:eye-close-fill" color="white" size="28"/> 
+                <Icon class="!hidden group-hover:!inline" name="mingcute:eye-2-fill" color="white" size="28"/> 
+            </span>
+            <span class="without-hover">
+                <Icon name="mingcute:eye-2-fill" color="white" size="28"/> 
+            </span>
         </NuxtLink>
     </div>
 </template>
@@ -36,6 +41,20 @@
     .home-content-intro-3 {
         animation-delay: 4500ms !important;
     }
+    .without-hover {
+            display: none;
+    }   
+
+    @media(hover: none) {
+        .with-hover {
+            display: none;
+        }
+    
+        .without-hover {
+            display: inline-block;
+        }
+    }
+
     @keyframes fadeUp {
         0% { opacity: 0; transform: translateY(50%)  }
         100% { opacity: 1; transform: translateY(0%) }
