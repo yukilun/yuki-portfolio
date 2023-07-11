@@ -1,5 +1,5 @@
 <template>
-    <ScrollParallax :rotateFrom="0" :rotateTo="360" class="section-header pt-[110px] pb-10 md:pb-20 flex items-center justify-between gap-2 overflow-hidden">
+    <ScrollParallax :rotateFrom="0" :rotateTo="360" class="section-header pt-[90px] pb-10 md:pb-20 flex items-center justify-between gap-2 overflow-hidden">
         <ScrollToggle class="section-header-heading text-3xl sm:text-5xl lg:text-6xl font-serif uppercase border-l-8 md:border-l-[12px] pl-4 sm:pl-8 md:pl-10 border-[#bdb041] flex-shrink-0">
             <span v-for="(letter, idx) in heading.split('')" class="letter" :style="`transition-delay: ${idx * 50 }ms`">
                 {{letter}}
