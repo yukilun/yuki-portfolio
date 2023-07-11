@@ -4,5 +4,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-icon'
-  ]
+  ],
+  runtimeConfig: {
+    EMAIL: process.env.EMAIL,
+    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
+    URL:process.env.URL,
+  },
 })
