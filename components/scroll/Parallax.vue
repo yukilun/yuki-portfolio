@@ -56,11 +56,9 @@ function createThrehold() {
 
 function observe(entries) {
     entries.forEach((entry) => {
-        // const target = entry.target.querySelector('.target');
         const targets = entry.target.querySelectorAll('.target');
         if(entry.isIntersecting) {
             const opacity = ( opacityTo - opacityFrom ) * entry.intersectionRatio + opacityFrom;
-            // target.style.opacity = opacity;
             [...targets].forEach((target)=> {
                 target.style.opacity = opacity;
             })
@@ -69,14 +67,11 @@ function observe(entries) {
             const trans_x = ( entry.boundingClientRect.y < 0 ? 1 : -1 ) * ( translateXpc  * (1 - entry.intersectionRatio) );
             const trans_y = ( entry.boundingClientRect.y < 0 ? 1 : -1 ) * ( translateYpc  * (1 - entry.intersectionRatio) );
             const scale = ( scaleTo - scaleFrom ) * entry.intersectionRatio + scaleFrom;
-            // target.style.transform = `rotate(${rotate}deg) translateX(${trans_x}%) translateY(${trans_y}%) scale(${scale})`
             [...targets].forEach((target)=> {
                 target.style.transform = `rotate(${rotate}deg) translateX(${trans_x}%) translateY(${trans_y}%) scale(${scale})`;
             });
         }
         else {
-            // target.style.opacity = opacityTo;
-            // target.style.transform = `rotate(${rotateTo}deg) translateX(${0}%) translateY(${0}%) scale(${scaleTo})` 
             [...targets].forEach((target)=> {
                 target.style.opacity = opacityTo;
                 target.style.transform = `rotate(${rotateTo}deg) translateX(${0}%) translateY(${0}%) scale(${scaleTo})` 
