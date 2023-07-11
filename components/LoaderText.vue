@@ -2,17 +2,20 @@
     <div class="loader-text flex flex-col gap-3">
         <div class="title text-white text-center text-xl pb-2 md:text-2xl">Yuki Lun's Portfolio</div>
         <div class="divider"> </div>
-        <svg class="w-full h-[60px] text-center font-serif text-3xl uppercase pt-2 md:h-[72px] md:text-4xl">
+        <svg v-if="!route.path.startsWith('/projects/')"  class="w-full h-[60px] text-center font-serif text-3xl uppercase pt-2 md:h-[72px] md:text-4xl">
             <text x="50%" y="50%" text-anchor="middle" letter-spacing="3">
                 {{ loaderText }}
             </text>
         </svg>
+        <h2 v-else class="max-w-[90vw] h-[60px] text-center text-white font-serif text-2xl tracking-wider uppercase pt-2 md:h-[72px] md:text-3xl">
+                {{ loaderText }}
+        </h2>
     </div>
 </template>
 
 <script setup>
     const loaderText = useLoaderText();
-    // const { loaderText } = defineProps(['loaderText']);
+    const route = useRoute();
 </script>
 
 <style scoped>
@@ -35,6 +38,11 @@
         fill: transparent;
         animation: textAnimate 2000ms forwards 1000ms, fill 500ms forwards 2000ms;
     }
+    h2 {
+        opacity: 0;
+        transform: translateY(25%);
+        animation: fadeUp 1000ms forwards 1500ms;
+    }
     @keyframes appear {
         from { opacity: 0% }
         to { opacity: 100% }
@@ -47,5 +55,8 @@
         from { fill: transparent; }
         to { fill: white; }
     }
-
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(25%); }
+        to { opacity: 1; transform: translateY(0%); }    
+    }
 </style>
