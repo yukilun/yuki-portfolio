@@ -7,10 +7,8 @@
             </p>
         </ScrollToggle>
         <ScrollToggle @mouseenter="cursorIsHidden = true" @mouseleave="cursorIsHidden = false"
-            class="project-prototype w-[90%] max-w-[400px] aspect-phone mx-auto bg-[#DEECF3]">
-            <!-- <div class="max-w-[350px] aspect-phone mx-auto"> -->
+            class="project-prototype w-[80%] max-w-[400px] aspect-phone mx-auto bg-[#DEECF3]">
                 <iframe :src="`${project.prototype}`" class="w-full h-full mx-auto border-none outline-none" />
-            <!-- </div> -->
         </ScrollToggle>
     </div>
 
