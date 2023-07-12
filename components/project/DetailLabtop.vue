@@ -41,20 +41,20 @@ const { images, index, projectName } = defineProps(['images', 'index', 'projectN
     filter: blur(20px);
 }
 
-@media (hover: hover) {
-    .project-detail:hover .front-image {
-        opacity: 0;
-        transform: translateX(50%) scaleX(2); 
-        filter: blur(20px);
-    }
-    .project-detail:hover .back-image {
-        opacity: 1;
-        transform: translateX(0) scaleX(1); 
-        filter: none;
-    }
+/* @media (hover: hover) { */
+.project-detail:hover .front-image {
+    opacity: 0;
+    transform: translateX(50%) scaleX(2); 
+    filter: blur(20px);
 }
+.project-detail:hover .back-image {
+    opacity: 1;
+    transform: translateX(0) scaleX(1); 
+    filter: none;
+}
+/* } */
 
-@media (hover: none) {
+/* @media (hover: none) {
     .project-detail:active .front-image {
         opacity: 0;
         transform: translateX(50%) scaleX(2); 
@@ -65,6 +65,6 @@ const { images, index, projectName } = defineProps(['images', 'index', 'projectN
         transform: translateX(0) scaleX(1); 
         filter: none;
     }
-}
+} */
 
 </style>
