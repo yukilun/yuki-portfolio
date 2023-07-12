@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="`/projects/${project.id}`" @mouseenter="cursorText='View More'" @mouseleave="cursorText=null">
+    <NuxtLink :to="`/projects/${project.id}`" @mouseenter="cursorText='View More'" @mouseleave="cursorText=null" class="cursor-none">
         <ScrollParallax :translateYpc="20" :opacityFrom="0.7" :opacityTo="1"
             class="project-thumbnail-row h-fit flex flex-col justify-center relative mb-16 md:mb-32 group"
             :class="project.id % 2 !== 0 ? `items-end` : `items-start`">
