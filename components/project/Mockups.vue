@@ -1,15 +1,15 @@
 <template>
-    <ScrollParallax :translateYpc="10" class="project-mockups flex flex-col lg:flex-row pb-32">
-        <div class="project-mockups-phone target">
+    <div class="project-mockups flex flex-col lg:flex-row pb-32">
+        <div class="project-mockups-phone">
             <img :src="`${project.mockups.phone}`" :alt="`${project.name} phone mockup`" />
         </div>
-        <div class="project-mockups-tablet target">
+        <div class="project-mockups-tablet">
             <img :src="`${project.mockups.tablet}`" :alt="`${project.name} tablet mockup`" />
         </div>
         <div class="project-mockups-labtop">
             <img :src="`${project.mockups.labtop}`" :alt="`${project.name} labtop mockup`" />
         </div>
-    </ScrollParallax>
+    </div>
 </template>
 
 <script setup>

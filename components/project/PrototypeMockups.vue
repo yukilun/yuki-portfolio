@@ -1,12 +1,12 @@
 <template>
-    <ScrollParallax :translateYpc="10" class="project-mockups flex flex-col lg:flex-row lg:justify-center pb-32">
-        <div class="project-mockups-phone target">
+    <div class="project-mockups flex flex-col lg:flex-row lg:justify-center pb-32">
+        <div class="project-mockups-phone">
             <img :src="`${project.mockups.phone}`" :alt="`${project.name} phone mockup`" />
         </div>
         <div class="project-mockups-labtop">
             <img :src="`${project.mockups.labtop}`" :alt="`${project.name} labtop mockup`" />
         </div>
-    </ScrollParallax>
+    </div>
 </template>
 
 <script setup>
