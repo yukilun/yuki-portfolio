@@ -7,8 +7,8 @@
             class="home-content-projects-button button text-xl md:text-2xl lg:text-3xl font-serif py-3 px-6 group" id="home-content-projects-button">
             View My Projects&nbsp;
             <span class="with-hover">
-                <Icon class="inline group-hover:hidden" name="mingcute:eye-close-fill" color="white" size="28"/> 
-                <Icon class="!hidden group-hover:!inline" name="mingcute:eye-2-fill" color="white" size="28"/> 
+                <Icon class="inline group-hover:hidden" name="mingcute:eye-close-fill" color="white" size="1.25em"/> 
+                <Icon class="!hidden group-hover:!inline" name="mingcute:eye-2-fill" color="white" size="1.25em"/> 
             </span>
             <span class="without-hover">
                 <Icon name="mingcute:eye-2-fill" color="white" size="28"/> 
