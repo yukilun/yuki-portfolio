@@ -1,7 +1,7 @@
 <template>
     <ScrollToggle class="contact-intro flex-1 flex flex-col justify-center items-center">
-        <div class="bubbles w-[60%] max-w-[250px] flex mx-auto mb-5">
-            <svg class="bubble-left -mx-[6%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 170" fill="none">
+        <div class="bubbles w-[60%] max-w-[250px] flex justify-center mx-auto mb-5">
+            <svg class="bubble-left -mr-[6%] w-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 170" fill="none">
                 <g filter="url(#a)">
                     <path stroke="#A2C4C0" stroke-linecap="round" stroke-width="5.625"
                         d="M193.75 57.944c-24.028 26.962-39.284 37.269-70.526 44.773" />
@@ -44,7 +44,7 @@
                     </filter>
                 </defs>
             </svg>
-            <svg class="bubble-right -mx-[6%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 170" fill="none">
+            <svg class="bubble-right -ml-[6%] w-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 170" fill="none">
                 <g filter="url(#d)">
                     <path stroke="#E4C6BF" stroke-linecap="round" stroke-width="5.625"
                         d="M11.224 56.069c24.028 26.962 39.284 37.269 70.526 44.773" />
