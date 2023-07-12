@@ -5,6 +5,7 @@
             "name": "Expenses Sharing",
             "type": "MERN Stack",
             "thumbnail": "/images/projects/thumbnails/expenses-sharing.png",
+            "meta-description": "Expenses Sharing is a progressive web application (PWA) designed for sharing daily expenses with roommates, family or even friends.",
             "description": "Progressive Web Application (PWA)",
             "role": "Web Development / UI Design",
             "mockups": {
@@ -38,6 +39,7 @@
             "type": "Firebase + React",
             "thumbnail": "/images/projects/thumbnails/chatflex.png",
             "description": "Web Application",
+            "meta-description": "Chatflex is an instant messaging web application that allows users to communicate through text and images.",
             "role": "Web Development / UI Design",
             "mockups": {
                 "phone": "/images/projects/mockups/chatflex-phone.png",
@@ -69,6 +71,7 @@
             "name": "Cute Avatar Sketch",
             "type": "Next.js",
             "thumbnail": "/images/projects/thumbnails/cute-avatar-sketch.png",
+            "meta-description": "Cute Avatar Sketch is a public REST API for generating cute sketch-style avatars based on your preferences or randomly.",
             "description": "Public REST API",
             "role": "Web Development / UI Design / Illustration",
             "mockups": {
@@ -101,6 +104,7 @@
             "name": "Dear K.",
             "type": "Laravel + Vue.js",
             "thumbnail": "/images/projects/thumbnails/dear-k.png",
+            "meta-description": "Dear K. is an e-commerce website that sells Korean fashion items online.",
             "description": "E-commerce Website",
             "role": "Web Development / UI Design",
             "mockups": {
@@ -133,6 +137,7 @@
             "name": "SCHOOLOOP",
             "type": "UX/UI Design",
             "thumbnail": "/images/projects/thumbnails/schooloop.png",
+            "meta-description": "SCHOOLOOP is a community app designed for post-secondary school students who would like to connect with their schoolmates.",
             "description": "Moblie Application",
             "role": "UX / UI Design",
             "mockups": {
@@ -164,6 +169,7 @@
             "name": "Javascript Challenges",
             "type": "Pure Vanilla Javascript",
             "thumbnail": "/images/projects/thumbnails/js-challenges.png",
+            "meta-description": "The Javascript Challenges are a record of Yuki's initial learning curve in basic web development - HTML, CSS and Vanilla JS.",
             "description": "Hobby Website",
             "role": "Web Development",
             "mockups": {
