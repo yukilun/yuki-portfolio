@@ -8,6 +8,7 @@ const transporter = nodemailer.createTransport({
     user: config.EMAIL,
     pass: config.EMAIL_PASSWORD,
   },
+  from: config.EMAIL
 });
 
 export default defineEventHandler(async (event) => {
