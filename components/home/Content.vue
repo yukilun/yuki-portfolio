@@ -3,7 +3,8 @@
         <h1 class="home-content-intro-1 text-4xl md:text-5xl lg:text-6xl xl:text-7xl capitalize mb-3 md:mb-5">I'm <span class="text-highlight">Yuki</span>,</h1>
         <h3 class="home-content-intro-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl capitalize mb-1 md:mb-3">a full stack</h3>
         <h3 class="home-content-intro-3 text-3xl md:text-4xl lg:text-5xl xl:text-6xl capitalize mb-10 md:mb-14 lg:mb-20"><span class="text-highlight">web developer</span>.</h3>
-        <NuxtLink to="/projects" class="home-content-projects-button button text-xl md:text-2xl lg:text-3xl font-serif py-3 px-6 group" id="home-content-projects-button">
+        <NuxtLink to="/projects" @mouseenter="cursorIsHovering = true" @mouseleave="cursorIsHovering = false" 
+            class="home-content-projects-button button text-xl md:text-2xl lg:text-3xl font-serif py-3 px-6 group" id="home-content-projects-button">
             View My Projects&nbsp;
             <span class="with-hover">
                 <Icon class="inline group-hover:hidden" name="mingcute:eye-close-fill" color="white" size="28"/> 
@@ -17,7 +18,7 @@
 </template>
 
 <script setup>
-
+const cursorIsHovering = useCursorIsHovering();
 </script>
 
 <style scoped>

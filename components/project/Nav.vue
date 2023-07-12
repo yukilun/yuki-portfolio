@@ -1,6 +1,7 @@
 <template>
     <ScrollToggle class="project-nav flex justify-between my-5">
-        <NuxtLink v-if="prevPath" :to="`/${prevPath}`" class="hover:scale-105 transition-all duration-500 text-[#8c8270] mx-auto md:mx-0">
+        <NuxtLink v-if="prevPath" :to="`/${prevPath}`" @mouseenter="cursorIsHovering = true" @mouseleave="cursorIsHovering = false" 
+            class="hover:scale-105 transition-all duration-500 text-[#8c8270] mx-auto md:mx-0">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase flex items-center gap-2">
                 <span class="project-prev-icon inline-block transition-all duration-500 group-hover:translate-x-2 md:group-hover:translate-x-3">
                     <Icon name="material-symbols:keyboard-double-arrow-left" size="1.5em" />
@@ -9,7 +10,8 @@
             </h2>
         </NuxtLink>
         <div v-else class="hidden md:block"></div>
-        <NuxtLink v-if="nextPath" :to="`/${nextPath}`" class="hover:scale-105 transition-all duration-500 text-[#8c8270] mx-auto md:mx-0">
+        <NuxtLink v-if="nextPath" :to="`/${nextPath}`" @mouseenter="cursorIsHovering = true" @mouseleave="cursorIsHovering = false" 
+            class="hover:scale-105 transition-all duration-500 text-[#8c8270] mx-auto md:mx-0">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase flex items-center gap-2">
                 Next <span class="hidden lg:inline-block">Project</span>
                 <span class="project-next-icon inline-block transition-all duration-500 group-hover:translate-x-2 md:group-hover:translate-x-3">
@@ -17,7 +19,8 @@
                 </span>
             </h2>
         </NuxtLink>
-        <NuxtLink v-else to="/about" class="hover:scale-105 transition-all duration-500 text-[#8c8270] mx-auto md:mx-0">
+        <NuxtLink v-else to="/about" @mouseenter="cursorIsHovering = true" @mouseleave="cursorIsHovering = false" 
+            class="hover:scale-105 transition-all duration-500 text-[#8c8270] mx-auto md:mx-0">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase flex items-center gap-2">
                 About
                 <span class="project-next-icon inline-block transition-all duration-500 group-hover:translate-x-2 md:group-hover:translate-x-3">
@@ -29,6 +32,7 @@
 </template>
 
 <script setup>
+const cursorIsHovering = useCursorIsHovering();
 const { prevPath, nextPath } = defineProps(['prevPath', 'nextPath']);
 </script>
 

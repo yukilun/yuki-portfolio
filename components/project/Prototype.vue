@@ -6,9 +6,10 @@
                 Interact with the Figma prototype below to get started...
             </p>
         </ScrollToggle>
-        <ScrollToggle class="project-prototype w-[90%] max-w-[400px] aspect-phone mx-auto bg-[#DEECF3]">
+        <ScrollToggle @mouseenter="cursorIsHidden = true" @mouseleave="cursorIsHidden = false"
+            class="project-prototype w-[90%] max-w-[400px] aspect-phone mx-auto bg-[#DEECF3]">
             <!-- <div class="max-w-[350px] aspect-phone mx-auto"> -->
-                <iframe :src="`${project.prototype}`" class="w-full h-full mx-auto border-none" />
+                <iframe :src="`${project.prototype}`" class="w-full h-full mx-auto border-none outline-none" />
             <!-- </div> -->
         </ScrollToggle>
     </div>
@@ -16,6 +17,7 @@
 </template>
 
 <script setup>
+const cursorIsHidden = useCursorIsHidden();
 const { project } = defineProps(['project']);
 </script>
 

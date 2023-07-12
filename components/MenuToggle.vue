@@ -1,6 +1,6 @@
 <template>
     <div class="fixed z-30 bottom-0 my-5 w-full text-center"> 
-        <button @click="isOpenMenu = !isOpenMenu"
+        <button @click="isOpenMenu = !isOpenMenu" @mouseenter="cursorIsHovering = true" @mouseleave="cursorIsHovering = false" 
             class="button bg-[#ACA393] h-12 w-12 rounded-full opacity-80">
             <Icon v-if="isOpenMenu" name="mingcute:close-fill" color="white" size="20"/>
             <Icon v-else name="mingcute:menu-fill" color="white" size="20"/>
@@ -136,12 +136,8 @@
 </template>
 
 <script setup>
+    const cursorIsHovering = useCursorIsHovering();
     const  isOpenMenu  = useIsOpenMenu();
-    watch(isOpenMenu, ()=> {
-        if(isOpenMenu) {
-            
-        }
-    })
 </script>
 
 <style scoped>
