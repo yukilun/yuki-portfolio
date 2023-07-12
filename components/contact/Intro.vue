@@ -237,7 +237,8 @@
 
 </script>
 
-<style scoped>.bubble-left {
+<style scoped>
+.bubble-left {
     opacity: 0;
     transform: translateX(-50%);
 }
@@ -250,7 +251,7 @@
 .contact-intro h3,
 .contact-intro p {
     opacity: 0;
-    transform: translateY(50%);
+    transform: translateY(25%);
 }
 
 .contact-intro.inview .bubble-left,
@@ -265,4 +266,5 @@
 .contact-intro.inview h3,
 .contact-intro.inview p {
     transition-delay: 800ms;
-}</style>
+}
+</style>
