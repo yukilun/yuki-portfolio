@@ -18,9 +18,7 @@ export default defineEventHandler(async (event) => {
   <div style="width: 95%; max-width: 650px; box-sizing: border-box; margin: 0 auto; border-radius: 10px; background-color: rgba(255,255,255,0.5);  padding: 40px;">
       <div style="width: 100%; margin: 0 auto; font-size: 1.4rem;">
           <p style="text-align: center;">
-              <a href="${config.URL}" style="color: #7CB3CF; text-decoration: none;">
                 <img src="cid:logo" style="width: 90%; max-width: 150px;" />
-              </a>
           </p>
       </div>
        <div style="width: 85%; margin: 10px auto; font-size: 1.15rem; color: #797979;">
