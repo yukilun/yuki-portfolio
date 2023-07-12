@@ -1,16 +1,18 @@
 <template>
-    <div class="loader-text flex flex-col gap-3">
-        <div class="title text-white text-center text-xl pb-2 md:text-2xl">Yuki Lun's Portfolio</div>
-        <div class="divider"> </div>
-        <svg v-if="!route.path.startsWith('/projects/')"  class="w-full h-[60px] text-center font-serif text-3xl uppercase pt-2 md:h-[72px] md:text-4xl">
-            <text x="50%" y="50%" text-anchor="middle" letter-spacing="3">
+    <ClientOnly>
+        <div class="loader-text flex flex-col gap-3">
+            <div class="title text-white text-center text-xl pb-2 md:text-2xl">Yuki Lun's Portfolio</div>
+            <div class="divider"> </div>
+            <svg v-if="!route.path.startsWith('/projects/')"  class="w-full h-[60px] text-center font-serif text-3xl uppercase pt-2 md:h-[72px] md:text-4xl">
+                <text x="50%" y="50%" text-anchor="middle" letter-spacing="3">
+                    {{ loaderText }}
+                </text>
+            </svg>
+            <h2 v-else class="max-w-[90vw] h-[60px] text-center text-white font-serif text-2xl tracking-wider uppercase pt-2 md:h-[72px] md:text-3xl">
                 {{ loaderText }}
-            </text>
-        </svg>
-        <h2 v-else class="max-w-[90vw] h-[60px] text-center text-white font-serif text-2xl tracking-wider uppercase pt-2 md:h-[72px] md:text-3xl">
-                {{ loaderText }}
-        </h2>
-    </div>
+            </h2>
+        </div>
+    </ClientOnly>
 </template>
 
 <script setup>
