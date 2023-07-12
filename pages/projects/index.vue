@@ -13,6 +13,17 @@
 <script setup>
 import data from '~/assets/data.json';
 
+useHead({
+    title: "Projects | Yuki Lun's Portfolio",
+    meta: [
+        { name: "description", content: "A collection of Yuki's web development and ux/ui design projects." },
+        { name: "twitter:title", content: "Projects | Yuki Lun's Portfolio" },
+        { name: "twitter:description", content: "A collection of Yuki's web development and ux/ui design projects." },
+        { property: "og:title", content: "Projects | Yuki Lun's Portfolio" },
+        { property: "og:description", content: "A collection of Yuki's web development and ux/ui design projects." },
+    ]
+});
+
 const isLoading = useIsLoading();
 const loaderText = useLoaderText();
 loaderText.value = 'Projects';

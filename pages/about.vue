@@ -14,7 +14,16 @@
 </template>
 
 <script setup>
-// import data from '~/assets/data.json';
+useHead({
+    title: "About | Yuki Lun's Portfolio",
+    meta: [
+        { name: "description", content: "Yuki is a full-stack web developer. She is passionate about coding. Find out more about her." },
+        { name: "twitter:title", content: "About | Yuki Lun's Portfolio" },
+        { name: "twitter:description", content: "Yuki is a full-stack web developer. She is passionate about coding. Find out more about her." },
+        { property: "og:title", content: "About | Yuki Lun's Portfolio" },
+        { property: "og:description", content: "Yuki is a full-stack web developer. She is passionate about coding. Find out more about her." },
+    ]
+});
 
 const isLoading = useIsLoading();
 const loaderText = useLoaderText();

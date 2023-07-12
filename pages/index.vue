@@ -6,8 +6,8 @@
 </template>
 
 <script setup>
-    const loaderText = useLoaderText();
-    loaderText.value = 'Welcome';
+const loaderText = useLoaderText();
+loaderText.value = 'Welcome';
 </script>
 
 <style scoped>

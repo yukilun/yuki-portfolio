@@ -11,6 +11,16 @@
 </template>
 
 <script setup>
+useHead({
+    title: "Contact | Yuki Lun's Portfolio",
+    meta: [
+        { name: "description", content: "Feel free to contact Yuki on social media or by email." },
+        { name: "twitter:title", content: "Contact | Yuki Lun's Portfolio" },
+        { name: "twitter:description", content: "Feel free to contact Yuki on social media or by email." },
+        { property: "og:title", content: "Contact | Yuki Lun's Portfolio" },
+        { property: "og:description", content: "Feel free to contact Yuki on social media or by email." },
+    ]
+});
 const isLoading = useIsLoading();
 const loaderText = useLoaderText();
 loaderText.value = 'Contact';

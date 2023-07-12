@@ -24,6 +24,17 @@ const project = data.projects[projectIndex];
 const prevPath = projectIndex <= 0 ? null : `projects/${data.projects[projectIndex - 1].id}`;
 const nextPath = projectIndex >= data.projects.length - 1 ? null : `projects/${data.projects[projectIndex + 1].id}`;
 
+useHead({
+    title: `${project.name} | Yuki Lun's Portfolio`,
+    meta: [
+        { name: "description", content: `${project['meta-description']}` },
+        { name: "twitter:title", content: `${project.name} | Yuki Lun's Portfolio` },
+        { name: "twitter:description", content: `${project['meta-description']}` },
+        { property: "og:title", content: `${project.name} | Yuki Lun's Portfolio` },
+        { property: "og:description", content: `${project['meta-description']}` },
+    ]
+});
+
 const isLoading = useIsLoading();
 const loaderText = useLoaderText();
 loaderText.value = `${project.name}`;
