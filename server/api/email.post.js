@@ -36,7 +36,7 @@ export default defineEventHandler(async (event) => {
     </div>`;
 
     const email = {
-      from: `Yuki Lun <${config.EMAIL}>`,
+      from: `Yuki Lun's Portfolio <${config.EMAIL}>`,
       to: formValues.email,
       bcc: config.EMAIL,
       subject: `${formValues.name}, thank you for contacting me!`,
