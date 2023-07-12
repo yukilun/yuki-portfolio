@@ -3,13 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *, *:hover {
-    cursor: none;
-} */
+html {
+    overflow: hidden;
+    overscroll-behavior: none;
+}
 
 body {
     background-color: #F5F5DC;
     color: #63605b;
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
 }
 
 h1, h2, h3, h4, h5, h6 {

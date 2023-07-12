@@ -16,8 +16,10 @@
 <script setup>
     useHead({
         title: "Yuki Lun's Portfolio",
+        charset: 'utf-8',
+        viewport: 'viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
         meta: [
-            {name: 'description', content: "Welcome to Yuki Lun's portfolio."}
+            {name: 'description', content: "Welcome to Yuki Lun's portfolio."},
         ]
     });
     const isOpenMenu = useIsOpenMenu();
