@@ -47,6 +47,7 @@ export default defineEventHandler(async (event) => {
         cid: 'logo' 
       }],
       html: emailBody,
+      text: "Hello. I am Yuki. Thank you for leaving a message on my Portfolio webpage. I will get back to you as soon as possible!",
     };
 
     await transporter.sendMail(email);
