@@ -1,5 +1,11 @@
 <template>
-    <svg class="cursor fixed z-50 top-0 left-0 pointer-events-none scale-75" ref="cursor"
+    <div v-show="!cursorIsHidden" class="cursor fixed z-50 top-0 left-0 pointer-events-none flex flex-col justify-center items-center h-20 w-20 rounded-full" 
+        :class="cursorText !== null && 'bg-white mix-blend-difference'"  ref="cursor">
+        <h4 v-show="cursorText !== null" class="w-[80%] text-black text-center capitalize">{{ cursorText }}</h4>
+        <div v-show="cursorText == null" class="cursorStandard h-8 w-8 rounded-full border-2 border-gray-400 opacity-70 transition-all duration-200" 
+            :class="cursorIsHovering && 'bg-gray-400'" ref="cursorStandard"></div>
+    </div>
+    <!-- <svg class="cursorFollower fixed z-50 top-0 left-0 pointer-events-none scale-75" ref="cursorFollower"
         width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_17_2)">
         <circle cx="23" cy="22" r="20" fill="#ACA393"/>
@@ -36,27 +42,49 @@
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_2" result="shape"/>
         </filter>
         </defs>
-    </svg>
+    </svg> -->
 </template>
 
 <script setup>
+    const cursorText = useCursorText();
+    const cursorIsHovering = useCursorIsHovering();
+    const cursorIsHidden = useCursorIsHidden();
     const cursor = ref(null);
+    const cursorStandard = ref(null);
+    // const cursorFollower = ref(null);
     onMounted(()=> {
-        function getDimensions(event) {
-            cursor.value.style.transform = `translate(${event.clientX + 10}px, ${event.clientY + 10}px)`
+        function getCursorDimensions(event) {
+            cursor.value.style.transform = `translate3d(${event.clientX-40}px, ${event.clientY-40}px, 0)`;
+            // cursorFollower.value.style.transform = `translate3d(${event.clientX + 25}px, ${event.clientY + 25}px, 0)`;
         };
         window.addEventListener("mousemove", (event) => {
-            getDimensions(event);
+            getCursorDimensions(event);
         });
+        window.addEventListener('mousedown', (event) => {
+            cursorStandard.value.style.transform = `scale(65%)`;
+        })
+        window.addEventListener('mouseup', (event) => {
+            cursorStandard.value.style.transform = `scale(100%)`;
+        })
     });
+    const route = useRoute();
+    watch(route, ()=> {
+        cursorIsHidden.value = false;
+        cursorIsHovering.value = false;
+        cursorText.value = null;
+    }, {deep: true, immediate: true});
 </script>
 
 <style scoped>
 .cursor {
-    /* transition: 100ms ease-out; */
+    transition: 150ms ease-out;
 }
+.cursorFollower  {
+    transition: 300ms ease-out;
+}
+
 @media (hover: none) and (pointer: coarse) {
-    .cursor {
+    .cursor, .cursorFollower {
         display: none;
     }
 }
