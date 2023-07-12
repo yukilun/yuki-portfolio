@@ -1,7 +1,7 @@
 <template>
     <ScrollToggle class="project-video max-w-[1200px] mx-auto mb-20">
         <ScrollPlayVideo class="shadow-lg">
-            <video autoplay muted loop class="w-full">
+            <video autoplay muted loop playsinline class="w-full">
                 <source :src="`${project.video}`" type="video/mp4">
             </video>
         </ScrollPlayVideo>
