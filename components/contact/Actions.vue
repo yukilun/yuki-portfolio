@@ -109,7 +109,7 @@ function handleSubmit(event) {
 <style scoped>
 .contact-actions {
     opacity: 0;
-    transform: translateY(25%);
+    transform: translateY(15%);
 }
 
 .contact-actions.inview {
