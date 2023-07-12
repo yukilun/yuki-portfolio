@@ -9,3 +9,15 @@ export const useLoaderText = () => {
 export const useIsOpenMenu = () => {
     return useState('isOpenMenu', ()=> false);
 }
+
+export const useCursorText = () => {
+    return useState('cursorText', ()=> null);
+}
+
+export const useCursorIsHovering = () => {
+    return useState('cursorIsHovering', ()=> false);
+}
+
+export const useCursorIsHidden = () => {
+    return useState('cursorIsHidden', ()=> false);
+}
