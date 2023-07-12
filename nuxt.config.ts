@@ -5,6 +5,26 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon'
   ],
+  app: {
+    head: {
+      title: "Yuki Lun's Portfolio",
+      charset: 'utf-8',
+      viewport: 'viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
+      meta: [
+        {name: 'description', content: "Welcome to Yuki Lun's portfolio."},
+        {name: 'msapplication-TileColor', content: "#ffffff"},
+        {name: 'theme-color', content: "#ffffff"},
+      ],
+      link: [
+        { rel: "apple-touch-icon", sizes:"180x180", href:"/apple-touch-icon.png"},
+        { rel: "apple-touch-icon", sizes:"180x180", href:"/apple-touch-icon.png"},
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: "icon", type:"image/png", sizes:"32x32", href:"/favicon-32x32.png"},
+        { rel: "icon", type:"image/png", sizes:"316x16", href:"/favicon-16x16.png"},
+        { rel: "manifest", href:"/site.webmanifest"},
+      ]
+    }
+  },
   runtimeConfig: {
     EMAIL: process.env.EMAIL,
     EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
