@@ -178,7 +178,7 @@
                 "labtop": "/images/projects/mockups/js-challenges-labtop.png"
             },
             "links": {
-                "live": "https://https://js-challenges.yukilun.com",
+                "live": "https://js-challenges.yukilun.com",
                 "repo": "https://github.com/yukilun/JavaScript_Projects_Challenges"
             },
             "technologies": ["HTML", "CSS", "Javascript"],
