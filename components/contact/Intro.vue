@@ -139,14 +139,14 @@
 
 .contact-intro.inview .bubble-left,
 .contact-intro.inview .bubble-right,
-.contact-intro.inview h3,
+.contact-intro.inview h1,
 .contact-intro.inview p {
     opacity: 1;
     transform: translateX(0%) translateY(0%);
     transition: all 500ms 500ms;
 }
 
-.contact-intro.inview h3,
+.contact-intro.inview h1,
 .contact-intro.inview p {
     transition-delay: 800ms;
 }
