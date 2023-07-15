@@ -11,7 +11,7 @@ const { project } = defineProps(['project']);
 </script>
 
 <style scoped>
-.project-header h1, .project-header h3 {
+.project-header h1, .project-header h2 {
     opacity: 0; 
     transform: translateY(25%); 
     transition: all 500ms linear 200ms;
@@ -19,7 +19,7 @@ const { project } = defineProps(['project']);
 .project-header h2 {
     transition-delay: 700ms;
 }
-.project-header.inview h1, .project-header.inview h3 {
+.project-header.inview h1, .project-header.inview h2 {
     opacity: 1; 
     transform: translateY(0%); 
 }
