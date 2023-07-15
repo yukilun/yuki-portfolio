@@ -104,9 +104,9 @@
                 </defs>
             </svg>
         </div>
-        <h3 class="text-center text-2xl sm:text-3xl lg:text-4xl max-w-[600px] mb-6">
+        <h1 class="text-center text-2xl sm:text-3xl lg:text-4xl max-w-[600px] mb-6">
             <span class="text-highlight">Get in touch</span> with me!
-        </h3>
+        </h1>
         <p class="text-base sm:text-lg lg:text-xl !leading-relaxed max-w-[600px] mb-5">
             I am currently <span class="text-highlight font-bold">available</span> to work on any web development project
             full-time.

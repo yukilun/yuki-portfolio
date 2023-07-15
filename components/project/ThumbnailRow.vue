@@ -12,16 +12,16 @@
                 :class="project.id % 2 == 0 && 'text-end'">
                 <div :class="project.id % 2 !== 0 ? `ml-5 md:ml-10 xl:ml-20` : `mr-5 md:mr-10 xl:mr-20`">
                     <ScrollToggle :class="project.id % 2 !== 0 ? `project-type-left` : `project-type-right`">
-                        <h2 class="text-2xl sm:text-5xl lg:text-6xl text-white-800 capitalize"
+                        <h1 class="text-2xl sm:text-5xl lg:text-6xl text-white-800 capitalize"
                             :class="project.id % 2 == 0 && `sm:mr-10 xl:mr-0-20 `">
                             {{ project.type }} -
-                        </h2>
+                        </h1>
                     </ScrollToggle>
                     <ScrollToggle :class="project.id % 2 !== 0 ? `project-name-left` : `project-name-right`">
-                        <h3 class="text-2xl sm:text-5xl lg:text-6xl mt-3 sm:mt-5 md:mt-10 text-white-800 text-slate-500 capitalize"
+                        <h2 class="text-2xl sm:text-5xl lg:text-6xl mt-3 sm:mt-5 md:mt-10 text-white-800 text-slate-500 capitalize"
                             :class="project.id % 2 !== 0 && `sm:ml-10 xl:ml-20 `">
                             {{ project.name }}
-                        </h3>
+                        </h2>
                     </ScrollToggle>
                     <h1 class="project-num text-[60px] sm:text-[75px] md:text-[100px] lg:text-[180px] leading-tight tracking-wider">
                         {{ project.id.toString().padStart(2, '0') }}
