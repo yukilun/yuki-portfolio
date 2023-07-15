@@ -6,9 +6,9 @@
         <div>
             <p class="font-serif text-base md:text-lg tracking-widest uppercase mb-2 text-white">{{ path }}</p>
             <img class="w-[400px] aspect-video object-cover hidden md:block" :src="`/images/menu/${path}-labtop.png`"
-                alt="home thumb">
+                :alt="`thumbnail for ${path}`">
             <img class="w-[135px] h-[240px] object-cover block md:hidden" :src="`/images/menu/${path}-phone.png`"
-                alt="home thumb">
+                :alt="`thumbnail for ${path}`">
         </div>
     </NuxtLink>
 </template>
