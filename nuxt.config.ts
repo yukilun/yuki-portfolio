@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     head: {
       title: "Yuki Lun's Portfolio",
       charset: 'utf-8',
-      viewport: 'viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
+      viewport: 'width=device-width, initial-scale=1.0',
       meta: [
         { name: 'description', content: "Welcome to Yuki Lun's portfolio." },
         { name: 'msapplication-TileColor', content: "#ffffff" },
