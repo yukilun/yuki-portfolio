@@ -22,7 +22,7 @@ const cursorIsHovering = useCursorIsHovering();
 </script>
 
 <style scoped>
-    .home-content > h1,.home-content > h3{
+    .home-content > h1,.home-content > h2{
         opacity: 0;
         transform: translateY(50%);
         animation: fadeUp 300ms linear forwards 3800ms;

@@ -131,7 +131,7 @@
     transform: translateX(50%);
 }
 
-.contact-intro h3,
+.contact-intro h1,
 .contact-intro p {
     opacity: 0;
     transform: translateY(25%);

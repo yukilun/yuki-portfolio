@@ -16,7 +16,7 @@ const { project } = defineProps(['project']);
     transform: translateY(25%); 
     transition: all 500ms linear 200ms;
 }
-.project-header h3 {
+.project-header h2 {
     transition-delay: 700ms;
 }
 .project-header.inview h1, .project-header.inview h3 {
