@@ -1,7 +1,7 @@
 <template>
     <div v-show="!cursorIsHidden" class="cursor fixed z-50 top-0 left-0 pointer-events-none flex flex-col justify-center items-center h-20 w-20 rounded-full" 
         :class="cursorText !== null && 'bg-white mix-blend-difference'"  ref="cursor">
-        <h4 v-show="cursorText !== null" class="w-[80%] text-black text-center capitalize">{{ cursorText }}</h4>
+        <div v-show="cursorText !== null" class="w-[80%] text-black font-serif text-center capitalize">{{ cursorText }}</div>
         <div v-show="cursorText == null" class="cursorStandard h-8 w-8 rounded-full border-2 border-gray-400 opacity-70 transition-all duration-200" 
             :class="cursorIsHovering && 'bg-gray-400'" ref="cursorStandard"></div>
     </div>
