@@ -1,5 +1,5 @@
 <template>
-    <div class="header absolute z-30 top-0 left-0 w-full px-6 pt-3 pb-3 md:pb-6 bg-[#F5F5DC] bg-opacity-0">
+    <div class="header absolute z-30 top-0 left-0 w-fit px-6 pt-3 pb-3 md:pb-6 bg-[#F5F5DC] bg-opacity-0">
         <NuxtLink to="/" @mouseenter="cursorIsHovering = true" @mouseleave="cursorIsHovering = false"
             class="w-fit flex flex-col items-center origin-top-left md:scale-125 opacity-70 hover:opacity-100 hover:scale-125 md:hover:scale-[140%] transtion-all duration-500">
             <svg width="81" height="46" viewBox="0 0 81 46" fill="none" xmlns="http://www.w3.org/2000/svg">
