@@ -50,8 +50,10 @@ onMounted(()=> {
     const resetStyles = (e) => {
         thumbnail.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
     }
-    thumbnail.addEventListener("mousemove", handleHover);
-    thumbnail.addEventListener("mouseleave", resetStyles);
+    if(window.matchMedia( "(hover: hover)" ).matches) {
+        thumbnail.addEventListener("mousemove", handleHover);
+        thumbnail.addEventListener("mouseleave", resetStyles);
+    }
 });
 </script>
 
