@@ -116,7 +116,7 @@
                 "live": "https://dear-k.yukilun.com",
                 "repo": "https://github.com/yukilun/dear-k"
             },
-            "technologies": ["PHP", "Laravel", "Inertia.js", "Vue.js", "MongoDB", "Ubuntu VPS", "NGINX", "SCSS", "Bootstrap", "VeeValidate", "Yup", "Maska", "Font Awesome", "AOS", "Swiper", "Stripe"],
+            "technologies": ["PHP", "Laravel", "Inertia.js", "Vue.js", "MySQL", "Ubuntu VPS", "NGINX", "SCSS", "Bootstrap", "VeeValidate", "Yup", "Maska", "Font Awesome", "AOS", "Swiper", "Stripe"],
             "overview": "Dear K. is an e-commerce website that sells Korean fashion items online. The goal of building this website was to learn PHP with the Laravel framework for back-end development, and Vue.js for front-end development. With Laravel, I gained a deeper understanding of the model-view-controller (MVC) design pattern. The built-in support that Laravel offers, such as routing, sessions, and user authentication, also helped me create the website very quickly. Like React, Vue.js allows me to build an interactive front-end with a component-based architecture. Inertia.js serves as a bridge between Laravel and Vue.js without requiring APIs. It also supports server-side rendering (SSR), which allows SEO optimization for the website. On the website, customers can register, login, and manage their accounts. They can add items to their cart, checkout, and view their orders anytime.",
             "video": "/videos/dear-k.mp4",
             "details": {
