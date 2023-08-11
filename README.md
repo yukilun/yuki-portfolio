@@ -11,7 +11,7 @@ Building this portfolio website has also taught me a lot. First of all, I learne
 [Live Website](https://yukilun.com)
 
 ## Technologies
-`Nuxt.js` `Vue.js` `Tailwind CSS` `IntersectionObserver API` `Nuxt Icon`, `Nodemailer`
+`Nuxt.js` `Vue.js` `Tailwind CSS` `IntersectionObserver API` `Nuxt Icon` `Nodemailer`
 
 ## Details
 ![Image for Yuki Lun's Portfolio](../../../yuki-portfolio/blob/main/public/images/menu/projects-labtop.png)
