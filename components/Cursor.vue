@@ -83,7 +83,12 @@
     transition: 300ms ease-out;
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (hover: none) {
+    .cursor, .cursorFollower {
+        display: none;
+    }
+}
+@media (pointer: coarse) {
     .cursor, .cursorFollower {
         display: none;
     }
