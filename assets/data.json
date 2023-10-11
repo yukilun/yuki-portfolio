@@ -167,7 +167,7 @@
         {
             "id": 6,
             "name": "Javascript Challenges",
-            "type": "Pure Vanilla Javascript",
+            "type": "My Learning Journey",
             "thumbnail": "/images/projects/thumbnails/js-challenges.png",
             "meta-description": "The Javascript Challenges are a record of Yuki's initial learning curve in basic web development - HTML, CSS and Vanilla JS.",
             "description": "Hobby Website",
@@ -178,11 +178,11 @@
                 "labtop": "/images/projects/mockups/js-challenges-labtop.png"
             },
             "links": {
-                "live": "https://js-challenges.yukilun.com",
-                "repo": "https://github.com/yukilun/JavaScript_Projects_Challenges"
+                "live": "https://javascript-challenges.yukilun.com/",
+                "repo": "https://github.com/yukilun/javascript-challenges"
             },
-            "technologies": ["HTML", "CSS", "Javascript"],
-            "overview": "The Javascript Challenges are simply a record of my initial learning curve in basic web development - HTML, CSS and Vanilla Javascript. Obviously, some of them may not be responsive while some of the codes may not be the best. However, it gave me the opportunity to hone my coding skills. Among all the challenges, I love \"Color blind game\" and \"Wordfill\" the most as I enjoyed coding and playing them a lot! I am sure you will also have a great time playing them as well!",
+            "technologies": ["Vue.js", "Nuxt.js", "Pinia" ,"Tailwind CSS", "GSAP", "Lenis", "Hover-effect"],
+            "overview": "The JavaScript Challenges serve as a documentation of my journey in web development — from basic HTML, CSS, and Vanilla JavaScript to various frameworks like React and Vue. Admittedly, some challenges may lack responsiveness, and certain pieces of code might not be optimal. Nonetheless, these challenges provided invaluable opportunities to refine my coding skills. Explore these challenges and feel free to take them on! During the creation of this showcase, I used Nuxt.js and created scroll animations and smooth page transitions with GSAP and Lenis Library.",
             "video": "/videos/js-challenges.mp4",
             "details": {
                 "labtop": [
@@ -202,7 +202,7 @@
         "frontend": {
             "languages": ["HTML", "CSS", "SCSS", "Javascript"],
             "frameworks": ["React", "Vue.js", "Next.js*", "Nuxt.js*", "Bootstrap", "Tailwind CSS"],
-            "libraries": ["jQuery", "Axios", "AOS", "Swiper", "... more"]
+            "libraries": ["Zustand", "Pinia","jQuery", "Axios", "GSAP", "Swiper", "... more"]
         },
         "backend": {
             "languages": ["Javascript", "PHP"],
