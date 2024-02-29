@@ -108,8 +108,8 @@
             <span class="text-highlight">Get in touch</span> with me!
         </h1>
         <p class="text-base sm:text-lg lg:text-xl !leading-relaxed max-w-[600px] mb-5">
-            I am currently <span class="text-highlight font-bold">available</span> to work on any web development project
-            full-time.
+            <!-- I am currently <span class="text-highlight font-bold">available</span> to work on any web development project full-time. -->
+            I'm currently open for <span class="text-highlight font-bold">freelance opportunities</span> in web development.
             Please feel free to reach out to me on <span class="text-highlight font-bold">social media</span>
             or by <span class="text-highlight font-bold">email</span>.
         </p>

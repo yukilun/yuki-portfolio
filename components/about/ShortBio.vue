@@ -12,7 +12,7 @@
                 I am a <span class="text-highlight font-bold">full-stack web developer</span> from Hong Kong.
                 I am passionate about <span class="text-highlight font-bold">creating websites</span>.
                 Recently, I graduated from <span class="text-highlight font-bold">Douglas College</span> in New Westminster, BC Canada.
-                I am now seeking <span class="text-highlight font-bold">job opportunities</span> in web development.
+                <!-- I am now seeking <span class="text-highlight font-bold">job opportunities</span> in web development. -->
             </p>
         </div>
     </div>

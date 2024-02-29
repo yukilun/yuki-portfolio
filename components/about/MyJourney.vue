@@ -13,8 +13,9 @@
                 Technology at Douglas College in Canada.
             </p>
             <p class="text-base sm:text-lg lg:text-xl !leading-relaxed mb-5">
-                After graduation, I planned on pursuing a <span class="text-highlight font-bold">web development career</span>.
-                To achieve my goal, I continued to <span class="text-highlight font-bold">learn online</span> at home.
+                After graduation,
+                <!-- I planned on pursuing a <span class="text-highlight font-bold">web development career</span>. To achieve my goal, -->
+                I continued to <span class="text-highlight font-bold">learn online</span> at home.
                 With the help of online resources, I have gained more <span class="text-highlight font-bold">advanced knowledge</span> of web development by watching tons of YouTube videos and browsing numerous tutorials.
             </p>
         </div>
